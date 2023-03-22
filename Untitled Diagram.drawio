@@ -1,4 +1,4 @@
-<mxfile modified="2023-03-22T02:53:59.694Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.43" etag="yVL6iwR5Us5IvAFKKYCb" version="21.0.8" type="github" pages="2">
+<mxfile modified="2023-03-22T05:38:54.776Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.43" etag="d5tUiWBwuZODQj5k4z9X" version="21.0.8" type="github" pages="3">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
     <mxGraphModel dx="1249" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -246,6 +246,38 @@
         </mxCell>
         <mxCell id="fDCuLjD3sgY74mPGMBz7-26" value="Step4: Set URL" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-17">
           <mxGeometry x="60" y="240" width="160" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="X-7WGFRsXYXBegKhURLv" name="Page-3">
+    <mxGraphModel dx="1249" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zgtX1EUEQcdj9h9cI-V8-1" target="zgtX1EUEQcdj9h9cI-V8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-1" value="Event" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-3" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;on:&lt;/div&gt;&lt;div&gt;&amp;nbsp; push:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; tags:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - &#39;**-dev&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - &#39;!**-int&#39;&lt;/div&gt;&lt;/blockquote&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="zgtX1EUEQcdj9h9cI-V8-1">
+          <mxGeometry y="20" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-5" value="Runner: Amazon Linux" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="217.5" width="320" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-8" value="Job: integration-test-PP" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="zgtX1EUEQcdj9h9cI-V8-5">
+          <mxGeometry x="20" y="40" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-11" value="Step1: Checkout" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="zgtX1EUEQcdj9h9cI-V8-5">
+          <mxGeometry x="80" y="90" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-9" value="Step2: Configure TSPAWS profile" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="zgtX1EUEQcdj9h9cI-V8-5">
+          <mxGeometry x="80" y="140" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zgtX1EUEQcdj9h9cI-V8-10" value="Step3: Build and push dev image" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="zgtX1EUEQcdj9h9cI-V8-5">
+          <mxGeometry x="80" y="190" width="220" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
