@@ -1,4 +1,4 @@
-<mxfile modified="2023-03-21T09:02:38.230Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.43" etag="V7NmeE7ZbP88UZNPVfqM" version="21.0.8" type="github" pages="2">
+<mxfile modified="2023-03-22T02:53:59.694Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.43" etag="yVL6iwR5Us5IvAFKKYCb" version="21.0.8" type="github" pages="2">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
     <mxGraphModel dx="1249" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -152,6 +152,9 @@
         <mxCell id="UEzPUAAOIrF-is8g5C7q-110" value="data lake console" style="outlineConnect=0;gradientColor=none;fontColor=#545B64;strokeColor=none;fillColor=#879196;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.illustration_notification;pointerEvents=1;labelBackgroundColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="160.5" y="221.5" width="100" height="81" as="geometry" />
         </mxCell>
+        <mxCell id="ymrZQuZ3n5G4sRj5K7Jq-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UEzPUAAOIrF-is8g5C7q-111" target="UEzPUAAOIrF-is8g5C7q-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="UEzPUAAOIrF-is8g5C7q-111" value="Amazon &lt;br&gt;Cognito" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cognito;labelBackgroundColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="74.5" width="78" height="78" as="geometry" />
         </mxCell>
@@ -196,8 +199,53 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZBDdnM63yQdL7t97UPN2-1" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="300" y="240" width="200" height="200" as="geometry" />
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fDCuLjD3sgY74mPGMBz7-9" target="fDCuLjD3sgY74mPGMBz7-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-9" value="Event" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="120" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-12" value="&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;On:&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;workflow_dispatch:&lt;br&gt;schedule:&lt;br&gt;pull_request:&lt;br&gt;push:&lt;/blockquote&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-9">
+          <mxGeometry y="20" width="200" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fDCuLjD3sgY74mPGMBz7-14" target="fDCuLjD3sgY74mPGMBz7-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-14" value="Runner1:Amazon Linux" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="120" width="240" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-23" value="Job1: Run Tests" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-14">
+          <mxGeometry x="20" y="40" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-22" value="Step1: Checkout" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-14">
+          <mxGeometry x="50" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-21" value="Step3: Test Pipeline" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-14">
+          <mxGeometry x="50" y="190" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-20" value="Step2: Set Environment" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-14">
+          <mxGeometry x="50" y="140" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-24" value="Step4: Test Integration" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-14">
+          <mxGeometry x="50" y="240" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-17" value="Runner2:Amazon Linux" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="650" y="120" width="250" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-30" value="Job2: Deploy to Test" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-17">
+          <mxGeometry x="30" y="40" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-29" value="Step1: Checkout" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-17">
+          <mxGeometry x="60" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-28" value="Step2: Set Environment" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-17">
+          <mxGeometry x="60" y="140" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-27" value="Step3: Update &amp;amp; Run" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-17">
+          <mxGeometry x="60" y="190" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDCuLjD3sgY74mPGMBz7-26" value="Step4: Set URL" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fDCuLjD3sgY74mPGMBz7-17">
+          <mxGeometry x="60" y="240" width="160" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
